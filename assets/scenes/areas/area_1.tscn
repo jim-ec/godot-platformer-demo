@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=4 uid="uid://0xv51av0vp07"]
+[gd_scene load_steps=13 format=4 uid="uid://0xv51av0vp07"]
 
 [ext_resource type="Texture2D" uid="uid://cfoj5he8lw1qk" path="res://assets/sprites/tiles_1.png" id="1_2eaa5"]
+[ext_resource type="PackedScene" uid="uid://diciq1btc8f3p" path="res://assets/scenes/ui/hud.tscn" id="1_vmyuu"]
 [ext_resource type="PackedScene" uid="uid://bmytboqimvr0u" path="res://assets/scenes/player.tscn" id="2_4ud05"]
 [ext_resource type="PackedScene" uid="uid://cdq5mkbjiwu78" path="res://assets/scenes/moving_platform_large.tscn" id="3_rmcmk"]
 [ext_resource type="PackedScene" uid="uid://bdol5ygxi1qea" path="res://assets/scenes/energy_cell.tscn" id="4_iqvpp"]
@@ -366,6 +367,10 @@ _data = {
 point_count = 2
 
 [node name="area_1" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hud" parent="CanvasLayer" instance=ExtResource("1_vmyuu")]
 
 [node name="one_way_ground" type="TileMapLayer" parent="."]
 use_parent_material = true

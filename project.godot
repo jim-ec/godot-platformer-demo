@@ -24,6 +24,10 @@ GameManager="*res://assets/scripts/game_manager.gd"
 window/size/viewport_width=2000
 window/size/viewport_height=1200
 
+[global_group]
+
+hud=""
+
 [input]
 
 jump={
