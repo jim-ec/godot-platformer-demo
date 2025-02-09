@@ -101,8 +101,7 @@ height = 14.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_jn8x0")
-speed = 5.0
-jump_power = 8.0
+speed = 4.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -15)
@@ -129,6 +128,5 @@ region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_qcmio")

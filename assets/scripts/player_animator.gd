@@ -12,7 +12,7 @@ func _process(_delta: float) -> void:
 	if player_controller.velocity.x == 0:
 		animation_player.play("idle")
 	else:
-		animation_player.play("play")
+		animation_player.play("move")
 
 	if player_controller.velocity.y < 0:
 		animation_player.play("jump")
